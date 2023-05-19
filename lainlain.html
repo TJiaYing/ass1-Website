@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>Kaum di Malaysia</title>
+  <link rel="stylesheet" href="home_page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="home page.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <i class="fa fa-tiems" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="http://localhost/db222/bangsa/home%20page.html">HALAMAN UTAMA</a></li>
+                    <li><a href="http://localhost/db222/bangsa/melayu.html">MELAYU</a></li>
+                    <li><a href="http://localhost/db222/bangsa/cina.html">CINA</a></li>
+                    <li><a href="http://localhost/db222/bangsa/india.html">INDIA</a></li>
+                    <li><a href="">SABAH & SARAWAK</a></li>
+                    <li><a href="http://localhost/db222/bangsa/feedback.html">MAKLUM BALAS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+          <h1>MASYARAKAT <br> SABAH DAN SARAWAK</h1>
+          <div class="option">
+            <select class="form-control" onchange="jumpToSection(this.value)">
+              <option value="default">Masyarakat Sabah</option>
+              <option value="#sabah">Sabah</option>
+              <option value="#kadasan">Kadazan Dusun</option>
+              <option value="#bajau">Bajau</option>
+            </select>
+            <select class="form-control" onchange="jumpToSection(this.value)">
+              <option value="default">Masyarakat Sarawak</option>
+              <option value="#sarawak">Sarawak</option>
+              <option value="#iban">Iban</option>
+              <option value="#melanau">Melanau</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      
+      <section class="pengenalan">
+        <h1 class="text-center">Pengenalan Kaum di Sabah dan Sarawak</h1>
+        <p>Sabah dan Sarawak, dua negara bagian di Malaysia, memiliki keanekaragaman etnis dan budaya yang kaya.
+            Pengenalan ini hanya memberikan gambaran umum tentang kelompok etnis di Sabah dan Sarawak. Setiap 
+            kelompok etnis memiliki budaya, adat resam, dan tradisi yang lebih dalam dan kompleks yang menjadikan 
+            mereka unik dalam keragaman budaya Malaysia.</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="check1" name="check1" value="value1">
+          <label class="form-check-label" for="check1">Done</label>
+        </div>
+
+        <div class="kaum-col">
+            <h2 id="sabah">Sabah</h2>
+            <p><i class="bi bi-1-circle">Suku Kadazan-Dusun: Merupakan kelompok etnis terbesar di Sabah. Mereka 
+               terdiri dari suku Kadazan dan suku Dusun, dengan budaya pertanian dan adat resam yang khas.</i><br><br>
+               <i class="bi bi-2-circle">Suku Bajau: Merupakan kelompok etnis pesisir yang terkenal dengan 
+               hubungan erat mereka dengan kehidupan laut dan tradisi nelayan.</i><br><br><i class="bi bi-3-circle">
+               Suku Murut: Merupakan kelompok etnis yang memiliki keahlian dalam seni bela diri tradisional, 
+               pertanian, dan pembuatan kerajinan tangan.</i><br><br><i class="bi bi-4-circle">Suku Rungus: 
+               Merupakan kelompok etnis yang tinggal di daerah Kudat, terkenal dengan keahlian anyaman dan kehidupan 
+               pertanian.</i><br><br><i class="bi bi-5-circle">Suku Suluk: Merupakan kelompok etnis yang memiliki 
+               hubungan budaya dan sejarah yang erat dengan negara tetangga Filipina.</i></p>
+               <footer>
+                <div class="text-center">
+              <div class="video-container">
+                <video controls width="520" height="200">
+                  <source src="images/sabah.mp4" type="video/mp4">
+                </video>
+               <footer>
+                <div class="button-row">
+                  <button onclick="like(likeCount5)" class="btn btn-primary">
+                    <i class="bi bi-hand-thumbs-up"></i>Suka
+                  </button>
+                  <span id="likeCount5">0</span>
+                  <button onclick="dislike(dislikeCount5)" class="btn btn-primary">
+                    <i class="bi bi-hand-thumbs-down"></i>Tidak Suka
+                  </button>
+                  <span id="dislikeCount5">0</span>
+                </div>
+              </footer>
+              </div>
+            </footer>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="check3" name="check3" value="value3">
+          <label class="form-check-label" for="check3">Done</label>
+        </div>
+
+        <div class="kaum-col">
+            <h3 id="kadasan">Kadazan Dusun</h3>
+            <p>Adat resam dan budaya Kadasan Dusun, atau juga dikenal sebagai Suku Dusun, adalah bagian dari warisan budaya suku 
+               bangsa Dusun di Malaysia, terutama di negara bagian Sabah. Adat resam dan budaya Kadasan Dusun merupakan bagian 
+               penting dari keanekaragaman budaya di Malaysia, khususnya di Sabah. Budaya mereka yang kaya dengan pertanian, 
+               rumah adat, tarian, musik, dan kepercayaan, menunjukkan warisan dan identitas yang unik dari masyarakat Kadasan Dusun.</p>
+            <img src="images/kadazan.jpg" alt="Kadazan Dusun Image">
+            <div class="kaum-col-col">
+                <h4>Pertanian dan Penanaman Padi</h4>
+                <p>Pertanian merupakan kegiatan utama dalam kehidupan masyarakat Kadasan Dusun. Mereka mengandalkan penanaman padi 
+                   sebagai sumber utama penghidupan. Ritual-ritual khusus, seperti ritual membakar ladang dan upacara panen, sering 
+                   dilakukan untuk memohon kesuburan dan hasil panen yang baik.</p>
+                   <img src="images/kadazan padi.jpg">
+                <h4>Rumah Panjang</h4>
+                <p>Masyarakat Kadasan Dusun tinggal di rumah panjang tradisional yang dikenal sebagai "Bombarazon" atau "Baruk". 
+                   Rumah panjang ini memiliki desain yang khas, terbuat dari bahan alami seperti bambu dan kayu, dengan atap daun 
+                   kelapa atau ijuk.</p>
+                   <img src="images/kadazan rumah.JPG">
+                <h4>Pakaian Tradisional</h4>
+                <p>Pakaian tradisional Kadasan Dusun untuk perempuan biasanya terdiri dari baju kurung panjang dengan corak dan hiasan 
+                    yang indah, sedangkan laki-laki mengenakan baju Melayu dengan sarung atau celana panjang. Selain itu, mereka juga 
+                    sering mengenakan pakaian adat dalam acara-acara budaya dan perayaan khusus.</p>
+                    <img src="images/kadazan pakaian.jpg">
+                <h4>Tarian dan Musik Tradisional</h4>
+                <p>Tarian dan musik tradisional memainkan peran penting dalam budaya Kadasan Dusun. Tarian seperti "Sumazau" sering 
+                    dipentaskan dalam perayaan budaya dan pernikahan. Musik tradisional menggunakan alat musik seperti gong, 
+                    kulintangan, dan suling bambu.</p>
+                    <img src="images/kadazan tarian.jpg"><br>
+                    <img src="images/kadazan musik.jpg">
+                <h4>Kepercayaan dan Upacara Adat</h4>
+                <p>Masyarakat Kadasan Dusun memiliki kepercayaan animisme dan spiritualitas yang kuat. Mereka percaya pada roh alam 
+                    dan roh nenek moyang mereka. Upacara adat, seperti upacara perkawinan, upacara panen, dan upacara penyembuhan, 
+                    sering dilakukan dengan melibatkan doa, nyanyian, dan tarian.</p>
+                <h4>Makanan Tradisional</h4>
+                <p>Makanan tradisional Kadasan Dusun mencakup hidangan seperti bambangan (buah lokal), pinasakan (hidangan ikan atau 
+                    daging yang diasamkan), hinava (hidangan ikan mentah), dan linopot (nasi yang dimasak dengan daun pisang).</p>
+                    <img src="images/kadazan makanan.jpg">
+            </div>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="check4" name="check4" value="value4">
+          <label class="form-check-label" for="check4">Done</label>
+        </div>
+
+        <div class="kaum-col">
+          <h3 id="bajau">Bajau</h3>
+          <p>Adat resam dan budaya Bajau, juga dikenal sebagai Suku Bajau, merupakan bagian penting dari warisan budaya suku Bajau 
+             di Malaysia, terutama di negara bagian Sabah. Adat resam dan budaya Bajau adalah bagian integral dari kekayaan budaya 
+             di Malaysia, khususnya di Sabah. Melalui kehidupan laut, pakaian tradisional, seni dan kerajinan, musik, upacara adat, 
+             dan olahraga tradisional, masyarakat Bajau menjaga dan memperkaya identitas budaya mereka yang khas.</p>
+          <img src="images/bajau.jpg" alt="Bajau Image">
+          <div class="kaum-col-col">
+            <h4>Kehidupan Laut</h4>
+            <p>Masyarakat Bajau memiliki hubungan yang erat dengan kehidupan laut. Mereka adalah kelompok nelayan yang ahli dalam 
+                menangkap ikan dan mengumpulkan hasil laut. Tradisi penangkapan ikan dengan menggunakan "Lepa-Lepa" (perahu 
+                tradisional Bajau) masih dipraktikkan oleh mereka.</p>
+                <img src="images/bajau laut.jpg">
+            <h4>Pakaian Tradisional</h4>
+            <p>Pakaian tradisional Bajau melibatkan penggunaan "Baju Kurung" untuk perempuan dan "Baju Jahit" untuk laki-laki. 
+                Pakaian ini sering dihiasi dengan sulaman dan hiasan khas Bajau. Selain itu, dalam acara-acara adat atau perayaan 
+                khusus, mereka juga mengenakan pakaian adat yang lebih megah seperti "Baju Balob" dan "Baju Tinoko".</p>
+                <img src="images/bajau pakaian.jpg">
+            <h4>Seni dan Kerajinan</h4>
+            <p>Seni anyaman dan kerajinan tangan merupakan bagian penting dari budaya Bajau. Mereka terampil dalam membuat anyaman 
+                dari pandan, seperti tikar, topi, dan tas. Kerajinan ukir kayu juga sangat populer di kalangan masyarakat Bajau.</p>
+                <img src="images/bajau seni.jpg">
+            <h4>Musik Tradisional</h4>
+            <p>Musik tradisional Bajau umumnya menggunakan alat musik seperti gong, gendang, dan seruling. Musik ini sering diiringi 
+                oleh tarian tradisional seperti "Daling-Daling" yang merupakan tarian elegan yang dilakukan oleh para wanita.</p>
+                <img src="images/bajau music.jpg">
+            <h4>Kepercayaan dan Upacara Adat</h4>
+            <p> Masyarakat Bajau memiliki kepercayaan animisme dan Islam. Mereka mengamalkan tradisi adat seperti "Sanggar" 
+                (upacara pembersihan), "Sogit" (upacara perkawinan), dan "Magavau" (upacara panen). Mereka juga melaksanakan upacara 
+                pemakaman khas Bajau yang dikenal sebagai "Makam Tambak".</p>
+                <img src="images/bajau budaya.jpg">
+            <h4>Olahraga Tradisional</h4>
+            <p>Masyarakat Bajau memiliki beberapa olahraga tradisional yang masih dilestarikan, seperti "Silat Bajau" yang merupakan 
+                seni bela diri khas mereka. Olahraga air seperti balap perahu dan berenang juga menjadi bagian penting dari budaya Bajau.</p>
+                <img src="images/bajau olah.jpg">
+          </div>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="check5" name="check5" value="value5">
+          <label class="form-check-label" for="check5">Done</label>
+        </div>
+        <div class="kaum-col">
+          <h2 id="sarawak">Sarawak</h2>
+          <p><i class="bi bi-1-circle">Suku Iban: Merupakan kelompok etnis terbesar di Sarawak. Mereka memiliki tradisi pertanian, rumah 
+              panjang, seni bela diri tradisional, dan upacara adat yang khas.</i><br><br><i class="bi bi-2-circle">Suku Bidayuh: Merupakan 
+              kelompok etnis yang tinggal di wilayah pedalaman Sarawak. Mereka dikenal sebagai "Orang Bukit" dan memiliki tradisi pertanian 
+              dan adat resam yang unik.</i><br><br><i class="bi bi-3-circle">Suku Melanau: Merupakan kelompok etnis pesisir yang memiliki 
+              tradisi nelayan dan pertanian. Mereka juga terkenal dengan rumah panjang mereka.</i><br><br><i class="bi bi-4-circle">Suku Orang 
+              Ulu: Merupakan kelompok etnis yang tinggal di daerah pedalaman Sarawak, seperti Kenyah, Kayan, dan Kelabit. Mereka memiliki 
+              tradisi seni ukir, anyaman, dan upacara adat yang kaya.</i><br><br><i class="bi bi-5-circle">Suku Penan: Merupakan kelompok etnis 
+              yang tinggal di wilayah hutan Sarawak. Tradisi mereka terkait dengan pengumpulan pangan dan kehidupan nomaden.</i></p>
+              <footer>
+                <div class="text-center">
+              <div class="video-container">
+                <video controls width="520" height="200">
+                  <source src="images/sarawak.mp4" type="video/mp4">
+                </video>
+               <footer>
+                <div class="button-row">
+                  <button onclick="like(likeCount6)" class="btn btn-primary">
+                    <i class="bi bi-hand-thumbs-up"></i>Suka
+                  </button>
+                  <span id="likeCount6">0</span>
+                  <button onclick="dislike(dislikeCount6)" class="btn btn-primary">
+                    <i class="bi bi-hand-thumbs-down"></i>Tidak Suka
+                  </button>
+                  <span id="dislikeCount6">0</span>
+                </div>
+              </footer>
+              </div>
+            </footer>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="check6" name="check6" value="value6">
+          <label class="form-check-label" for="check6">Done</label>
+        </div>
+
+        <div class="kaum-col">
+            <h3 id="iban">Iban</h3>
+            <p>Adat resam dan budaya Iban, juga dikenal sebagai Dayak Iban, merupakan bagian penting dari warisan budaya suku Iban di Malaysia, 
+               terutama di negara bagian Sarawak di pulau Borneo. Adat resam dan budaya Iban memiliki kekayaan dan keunikan yang sangat khas, 
+               dan merupakan warisan budaya yang penting di Malaysia. Melalui rumah adat, tarian, musik, pakaian tradisional, pertanian, dan 
+               kepercayaan, masyarakat Iban menjaga dan memperkaya identitas dan warisan budaya mereka.</p>
+            <img src="images/iban.jpg" alt="Iban Image">
+            <div class="kaum-col-col">
+            <h4>Rumah Panjang</h4>
+            <p>Rumah Panjang, yang dikenal sebagai "Rumah Panjai" atau "Rumah Betang", merupakan bangunan tradisional suku Iban. Rumah panjang 
+                ini adalah rumah komunal yang dapat menampung beberapa keluarga Iban. Rumah panjang memiliki struktur yang panjang dan terbuat 
+                dari kayu, dengan berbagai ruangan untuk setiap keluarga yang tinggal di dalamnya.</p>
+                <footer>
+                    <div class="text-center">
+                <div class="video-container">
+                    <video controls width="520" height="200">
+                      <source src="images/iban rumah.mp4" type="video/mp4">
+                    </video>
+                   <footer>
+                    <div class="button-row">
+                      <button onclick="like(likeCount7)" class="btn btn-primary">
+                        <i class="bi bi-hand-thumbs-up"></i>Suka
+                      </button>
+                      <span id="likeCount7">0</span>
+                      <button onclick="dislike(dislikeCount7)" class="btn btn-primary">
+                        <i class="bi bi-hand-thumbs-down"></i>Tidak Suka
+                      </button>
+                      <span id="dislikeCount7">0</span>
+                    </div>
+                  </footer>
+                </div>
+            </footer>
+            <h4>Tarian dan Musik Tradisional</h4>
+            <p>Tarian dan musik tradisional Iban memiliki peran penting dalam budaya mereka. Tarian seperti "Ngajat" sering dipentaskan dalam 
+                perayaan budaya dan upacara adat. Musik tradisional menggunakan alat musik seperti gendang, suling, dan rebab.</p>
+                <img src="images/iban tarian.jpg">
+            <h4>Pakaian Tradisional</h4>
+            <p>Pakaian tradisional Iban termasuk "Pua Kumbu", kain tenun yang indah dengan corak dan motif khas. Selain itu, laki-laki Iban 
+                sering mengenakan "Selampai", kain panjang yang dililitkan di pinggang. Pakaian adat ini masih dipakai dalam acara-acara 
+                budaya dan perayaan khusus.</p>
+                <img src="images/iban pakaian.jpg">
+            <h4>Senjata Tradisional</h4>
+            <p>Para pejuang Iban terkenal dengan senjata tradisional mereka, seperti "Parang Ilang" (kapak berukuran besar), "Mandau" (parang 
+                berbilah melengkung), dan "Tumbok Lada" (tongkat panjang berujung besi).</p>
+                <img src="images/iban senjata.jpg">
+            <h4>Pertanian dan Pengumpulan Pangan</h4>
+            <p>Pertanian dan pengumpulan pangan merupakan bagian penting dalam kehidupan masyarakat Iban. Mereka mengandalkan kegiatan berladang 
+                dan berburu untuk memenuhi kebutuhan hidup mereka. Upacara adat, seperti "Gawai Antu" (upacara pembersihan ladang) dan "Gawai 
+                Kenyalang" (upacara permulaan ladang baru), sering dilakukan sebagai bagian dari kegiatan pertanian.</p>
+                <img src="images/iban pangan.jpg">
+            <h4>Kepercayaan dan Upacara Adat</h4>
+            <p>Masyarakat Iban memiliki kepercayaan animisme dan spiritualitas yang kuat. Mereka mempercayai adanya roh alam, roh nenek moyang, 
+                dan kekuatan alam. Upacara adat, seperti upacara pesta panen "Gawai Dayak", upacara pernikahan "Melah Pinang", dan upacara 
+                penyembuhan "Miring", merupakan bagian integral dari kehidupan masyarakat Iban.</p>
+                <img src="images/iban kepercayaan.jpg">
+        </div>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="check7" name="check7" value="value7">
+          <label class="form-check-label" for="check7">Done</label>
+        </div>
+
+        <div class="kaum-col">
+          <h3 id="melanau">Melanau</h3>
+          <p>Adat resam dan budaya Melanau adalah bagian penting dari warisan budaya suku bangsa Melanau di Malaysia, terutama di negara bagian 
+             Sarawak. Adat resam dan budaya Melanau merupakan bagian penting dari kekayaan budaya di Malaysia, khususnya di Sarawak. Melalui 
+             rumah panjang, pertanian, pakaian tradisional, kesenian, kepercayaan dan upacara adat, serta makanan tradisional, masyarakat Melanau 
+             menjaga dan memperkaya identitas budaya mereka yang khas.</p>
+             <footer>
+                <div class="text-center">
+             <div class="video-container">
+                <video controls width="520" height="200">
+                  <source src="images/melanau.mp4" type="video/mp4">
+                </video>
+               <footer>
+                <div class="button-row">
+                  <button onclick="like(likeCount8)" class="btn btn-primary">
+                    <i class="bi bi-hand-thumbs-up"></i>Suka
+                  </button>
+                  <span id="likeCount8">0</span>
+                  <button onclick="dislike(likeCount8)" class="btn btn-primary">
+                    <i class="bi bi-hand-thumbs-down"></i>Tidak Suka
+                  </button>
+                  <span id="dislikeCount8">0</span>
+                </div>
+              </footer>
+             </div>
+            </footer>
+          <div class="kaum-col-col">
+            <h4>Rumah Panjang Melanau</h4>
+            <p>Rumah Panjang Melanau, yang dikenal sebagai "Tajau Lundayeh" atau "Tajau Rumah", adalah rumah tradisional suku Melanau. Rumah 
+                ini memiliki struktur yang panjang dan terbuat dari kayu dengan atap berbentuk melengkung. Biasanya, beberapa keluarga Melanau 
+                tinggal dalam satu rumah panjang yang sama.</p>
+                <img src="images/melanau rumah.jpg">
+            <h4>Pertanian dan Perikanan</h4>
+            <p>Pertanian dan perikanan merupakan mata pencaharian utama masyarakat Melanau. Mereka mengandalkan pertanian padi, tanaman ubi kayu, 
+                dan perikanan sebagai sumber penghidupan mereka. Mereka juga memiliki tradisi menangkap ikan dengan menggunakan jaring tradisional 
+                yang disebut "Pukat".</p>
+            <h4>Pakaian Tradisional</h4>
+            <p>Pakaian tradisional Melanau termasuk "Baju Kurung Teluk Belanga" untuk perempuan dan "Baju Kurung Cekak Musang" untuk laki-laki. 
+                Pakaian ini terbuat dari kain songket yang indah dengan motif dan hiasan tradisional.</p>
+                <img src="images/melanau pakaian.JPG">
+            <h4>Kesenian dan Musik Tradisional</h4>
+            <p>Kesenian dan musik tradisional Melanau mencakup tarian dan musik yang unik. Tarian seperti "Tarian Pukat" dan "Tarian Kejar Menyusur" 
+                sering dipentaskan dalam perayaan budaya dan upacara adat. Alat musik tradisional yang digunakan meliputi gong, rebana, seruling, 
+                dan suling bambu.</p>
+                <img src="images/melanau tarian.jpg">
+            <h4>Kepercayaan dan Upacara Adat</h4>
+            <p>Masyarakat Melanau memiliki kepercayaan animisme dan juga menganut agama Islam. Mereka mengamalkan tradisi adat seperti "Bekandung" 
+                (upacara pertunangan), "Gawa" (upacara pernikahan), "Amat" (upacara pemakaman), dan "Kaul" (upacara penyucian rumah).</p>
+                <img src="images/melanau kepercayaan.jpg">
+            <h4>Makanan Tradisional</h4>
+            <p>Makanan tradisional Melanau mencakup hidangan seperti "Umai" (hidangan ikan mentah), "Linut" (hidangan dari sagu), "Tebaloi" 
+                (kue sagu), dan "Sambal Belacan" (sambal terasi). Mereka juga terkenal dengan hidangan seperti "Sarawak Laksa" yang merupakan 
+                hidangan populer di Sarawak.</p>
+                <img src="images/melanau pangan.jpg">
+          </div>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="check8" name="check8" value="value8">
+          <label class="form-check-label" for="check8">Done</label>
+        </div>
+      </section>
+      
+      <button onclick="scrollToTop()" id="backToTopBtn" title="Back to Top" class="btn btn-primary">
+        <i class="bi bi-arrow-up-circle"></i>
+      </button>
+      
+      <script>
+        function jumpToSection(sectionId) {
+          var targetSection = document.querySelector(sectionId);
+      
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      
+        window.addEventListener("scroll", function() {
+          var backToTopBtn = document.getElementById("backToTopBtn");
+          if (window.scrollY > 20) {
+            backToTopBtn.style.display = "block";
+          } else {
+            backToTopBtn.style.display = "none";
+          }
+        });
+      
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        }
+      </script>
+      
+      <script>
+        var navLinks = document.getElementById("navLinks");
+      
+        function showMenu() {
+          navLinks.style.right = "0";
+        }
+      
+        function hideMenu() {
+          navLinks.style.right = "-200";
+        }
+      </script>      
+
+  <footer>
+    
+    <script>
+        function like(likeCountId) {
+            var likeCount = parseInt(localStorage.getItem('likeCount')) || 0;
+            likeCount++;
+            document.getElementById("likeCount").textContent = likeCount;
+            localStorage.setItem('likeCount', likeCount.toString());
+        }
+        function dislike(dislikeCountId) {
+            var dislikeCount = parseInt(localStorage.getItem('dislikeCount')) || 0;
+            dislikeCount++;
+            document.getElementById("dislikeCount").textContent = dislikeCount;
+            localStorage.setItem('dislikeCount', likeCount.toString());
+        }
+    </script>
+</body>
+</html>
